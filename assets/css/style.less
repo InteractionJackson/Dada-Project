@@ -1,0 +1,119 @@
+// NOTE: You need to have a LESS compiler to compile this into CSS. Check out SimpLESS!
+
+// Google Fonts
+@import url('//fonts.googleapis.com/css?family=Quattrocento:400,700');
+
+@bodyFontColor: #666;
+@bodyFont: 'Quattrocento', serif;
+@bodyFontSize: 14px;
+
+html, body {
+	color: @bodyFontColor;
+	font: @bodyFontSize @bodyFont;
+}
+
+body {
+	background: url('../../assets/img/background.png') repeat 5% 5%;
+	margin: 40px auto;
+}
+
+a {
+	&, &:link, &:visited, &:active {
+		color: #8d8673;
+		text-decoration: none;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.button, button, input[type=button], input[type=submit] {
+	&, &:link, &:visited, &:active {
+		background-color: #db3c36;
+		-webkit-box-shadow: 5px 5px 0 #666;
+		-moz-box-shadow: 5px 5px 0 #666;
+		color: #f9eec4;
+		font-size: 20px;
+		margin: 0 10px 0 0;
+		padding: 15px 30px;
+		position: relative;
+		text-decoration: none;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+	}
+
+	&:hover {
+		-webkit-box-shadow: 0px 0px 0 #666;
+		-moz-box-shadow: 0px 0px 0 #666;
+		top: 5px; left: 5px;
+	}
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0 40px;
+	text-align: center;
+}
+
+h2 {
+	color: #bfb79b;
+	display: inline-block;
+	font-size: 22px;
+	z-index: 335;
+}
+
+ul {list-style: none; padding: 0; margin: 0;}
+
+.container {
+	
+	.content {
+		background-color: #fff;
+		border: 1px solid #333;
+		border-radius: 5px;
+		padding: 30px;
+	}
+
+	footer {
+		a {
+			bottom: 50px;
+			position: absolute;
+		}
+	}
+
+}
+
+footer {
+
+}
+
+#midground {
+	background: url('../../assets/img/midground.png') repeat 20% 20%;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: -1;
+	opacity: .4;
+}
+
+#foreground {
+	background: url('../../assets/img/foreground.png') repeat 90% 110%;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: -2;
+	opacity: .8;
+}
+
+.form-signin {
+	.form-signin-heading, .checkbox {
+		margin-bottom: 15px;
+		z-index: 994;
+	}
+
+	input[type="text"] {
+		font-size: 30px;
+		height: 72px;
+		line-height: 35px;
+		margin: 30px 0 40px 0;
+		z-index: 998;
+	}
+}
