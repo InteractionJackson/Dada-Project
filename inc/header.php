@@ -21,6 +21,9 @@
 			<script src="../assets/js/html5shiv.js"></script>
 		<![endif]-->
 
+		<!-- AngularJS - Front end Framework -->
+		<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'></script>
+
 		<!-- Fav and touch icons -->
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
