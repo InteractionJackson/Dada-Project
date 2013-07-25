@@ -53,7 +53,7 @@ function printTweet(tweet){
 				+	'<body>'
 				+	'<head>'
 				+	'<style type="text/css">'
-				+	'body {font-family: "Quicksand"; font-size: 55px;}'
+				+	'body {font-family: "Quicksand"; font-size: 45px; line-height: 1.4em; word-wrap: break-word;}'
 				+	'</style>'
 				+	'</head>'
 				+	'<h1>Dada Source</h1>'
