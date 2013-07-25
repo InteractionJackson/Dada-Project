@@ -72,7 +72,7 @@ $(document).ready(function() {
 	/**
 	* Tooltip
 	*/
-	$('.link').tooltip();
+	$('a[rel=tooltip]').tooltip({placement: 'bottom'});
 
 	/**
 	* Search Options

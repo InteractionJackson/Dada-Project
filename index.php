@@ -13,7 +13,7 @@
 </div>
 <div id="wysiwyg" class="hidden">
 	<ul id="sortable"></ul>
-	<p><a href="#" data-toggle="tooltip" data-placement="bottom" class="link" title="" data-original-title="Remember, DADA is based on nonsense, travesty, and incongruity... so have fun and drag and drop to you're hearts content!">What do I do?</a></p>
+	<a rel="tooltip" title="Remember, DADA is based on nonsense, travesty, and incongruity... so have fun and drag and drop to you're hearts content!">What do I do?</a>
 	<button class="button" type="submit">Next</button>
 	<a href="./" class="button resetbutton">Reset</a>
 </div>
