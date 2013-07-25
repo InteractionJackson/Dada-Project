@@ -41,6 +41,36 @@ function processTweet(tweet){
 	return list;
 }
 
+/**
+* Send the tweet to Little Printer.
+* @param	{String}	tweet
+*/
+function printTweet(tweet){
+	var printerCode	=	'VJPP9RZ69FEC',
+		url			=	'http://remote.bergcloud.com/playground/direct_print/' + printerCode;
+
+	var postData = 	'<html>'
+				+	'<body>'
+				+	'<head>'
+				+	'<style type="text/css">'
+				+	'body {font-family: "Quicksand"; font-size: 55px;}'
+				+	'</style>'
+				+	'</head>'
+				+	'<h1>Dada Source</h1>'
+				+	'<p>' + tweet + '</p>'
+				+	'</body>'
+				+	'</html>';
+
+	$.post(url, {html: postData})
+		.done(function(){
+			console.log('Tweet has been sent to Little Printer');
+		})
+		.fail(function(e){
+			console.log('There was an error sending the tweet to Little Printer:');
+			console.log(e);
+		});
+};
+
 $(document).ready(function() {
 	/**
 	* Hide the body, then fade in back in.
@@ -67,6 +97,16 @@ $(document).ready(function() {
 		$("#results").addClass("hidden"); // Hide the results
 		$("#wysiwyg").removeClass("hidden"); // Show the wysiwyg
 		$("#sortable").html(processTweet($(this).parent().find('blockquote').html()));
+	});
+
+	$("body").on('click', '#printTweet', function(){
+		var results = $("#sortable").find("li a");
+		var tweet = "";
+		for (var i = 0; i < results.length; i++) {
+			tweet = tweet + results[i].innerHTML + " ";
+		};
+		console.log(tweet);
+		printTweet(tweet);
 	});
 
 	/**
