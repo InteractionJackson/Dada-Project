@@ -12,8 +12,8 @@
 		<meta name="author" content="">
 
 		<!-- Le styles -->
-		<!-- Using a Bootstrap CDN, because it'll be faster -->
 		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
